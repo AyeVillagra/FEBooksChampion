@@ -18,6 +18,7 @@ const App = () => {
   const loginHandler = () => {
     setIsLoggedIn(true);
   };
+
   const router = createBrowserRouter([
     { path: "/", element: <Navigate to="/login" /> },
     {

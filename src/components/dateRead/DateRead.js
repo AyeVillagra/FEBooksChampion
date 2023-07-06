@@ -1,4 +1,4 @@
-import "./DateRead.css"
+import "./DateRead.css";
 
 const DateRead = ({ dateRead }) => {
   const year = dateRead.getFullYear();

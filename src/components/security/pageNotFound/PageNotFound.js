@@ -9,8 +9,8 @@ const PageNotFound = () => {
     navigate("/login");
   };
   return (
-    <div className="container404">
-      <h2 className="my-4">!Oops! La página solicitada no fue contratada</h2>
+    <div>
+      <h2>La página solicitada no fue encontrada</h2>
       <Button onClick={goBackHandler} variant="primary">
         Volver a iniciar sesión
       </Button>

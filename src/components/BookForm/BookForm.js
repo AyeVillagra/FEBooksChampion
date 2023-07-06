@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./BookForm.css";
 
-const BookForm = ({ onBookAdded }) => {
+const BookForm = ({ onBookAdded, setShowForm }) => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [dateRead, setDateRead] = useState("");
@@ -76,6 +76,7 @@ const BookForm = ({ onBookAdded }) => {
         </div>
       </div>
       <div className="new-book-actions">
+        <button onClick={() => setShowForm(false)}>Cancelar</button>
         <button onClick={addBookHandler}>Agregar lectura</button>
       </div>
     </form>

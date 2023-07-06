@@ -1,10 +1,9 @@
 import "./BookFilter.css";
 
-const BooksFilter = ({onYearChange, yearFiltered}) => {
-
+const BooksFilter = ({ onYearChange, yearFiltered }) => {
   const handleYearChange = (event) => {
-    onYearChange(event.target.value)
-  }
+    onYearChange(event.target.value);
+  };
 
   return (
     <>

@@ -1,16 +1,13 @@
 import { useState } from "react";
-
 import "./BookItem.css";
-
 import BookCard from "../bookCard/BookCard";
 import DateRead from "../dateRead/DateRead";
 
 const BookItem = ({ title, author, dateRead, pageCount }) => {
   const [bookTitle, setBookTitle] = useState(title);
-  const [bookAuthor, setBookAuthor] = useState("");
+  const [bookAuthor, setBookAuthor] = useState("author");
 
   const clickChangeTitleHandler = () => {
-    console.log("clicked");
     setBookTitle("Actualizado!");
   };
 
